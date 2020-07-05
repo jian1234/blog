@@ -1,0 +1,21 @@
+spring:            #全局配置
+  thymeleaf:
+    cache: false
+  profiles:
+    active: dev
+  redis:
+    database: 0
+    cluster:
+      nodes: 172.16.0.7:7001,172.16.0.7:7002,172.16.0.7:7003,172.16.0.7:7004,172.16.0.7:7005,172.16.0.7:7006
+    password:
+    pool:
+      max-active: 200
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
+    timeout: 20000
+    commandTimeout: 5000
+
+comment.avatar: /images/avatar.jpg
+server:
+  port: 8000
